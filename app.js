@@ -29,8 +29,11 @@ Ext.application({
         'MyViewport',
         'MyGridPanel',
         'MyPanel',
-        'MyWindow'
+        'wd_add'
     ],
     autoCreateViewport: true,
+    controllers: [
+        'MyController'
+    ],
     name: 'MyApp'
 });

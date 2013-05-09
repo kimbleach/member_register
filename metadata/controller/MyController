@@ -1,0 +1,53 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyController"
+    },
+    "designerId": "f222acc8-72e5-4759-a0ff-4737fd7a973b",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onButtonClick",
+                "implHandler": [
+                    "console.log('sdddddd');\r",
+                    "\r",
+                    "  var pnWindow = this.getAddInfo();\r",
+                    "\r",
+                    "        if(!pnWindow){\r",
+                    "            pnWindow = Ext.create('MyApp.view.wd_add');\r",
+                    "            pnWindow.show();\r",
+                    "        }"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "pn_find #btn_add"
+            },
+            "designerId": "35b0b7a8-8ee1-4d2b-b546-8423360d663c"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "addInfo",
+                "selector": "wd_add"
+            },
+            "designerId": "ee74ca2b-288d-45ae-8b4f-262711926338"
+        }
+    ]
+}

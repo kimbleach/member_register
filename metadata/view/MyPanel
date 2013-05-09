@@ -10,7 +10,7 @@
         "height": 111,
         "width": null,
         "designer|userClassName": "MyPanel",
-        "designer|userAlias": "mypanel",
+        "designer|userAlias": "pn_find",
         "layout": "absolute",
         "title": null
     },
@@ -60,6 +60,7 @@
             "userConfig": {
                 "layout|x": 640,
                 "layout|y": 40,
+                "id": "btn_add",
                 "width": 70,
                 "text": "เพิ่ม"
             },
