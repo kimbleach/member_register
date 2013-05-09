@@ -19,6 +19,7 @@ Ext.define('MyApp.view.MyGridPanel', {
 
     height: 174,
     title: 'ตารางข้อมูลสมาชิก',
+    store: 'MyStore',
 
     initComponent: function() {
         var me = this;
@@ -27,39 +28,33 @@ Ext.define('MyApp.view.MyGridPanel', {
             columns: [
                 {
                     xtype: 'gridcolumn',
-                    dataIndex: 'string',
-                    text: 'ลำดับ'
-                },
-                {
-                    xtype: 'gridcolumn',
                     dataIndex: 'number',
-                    text: 'รหัสสมาชิก'
+                    text: 'Number'
                 },
                 {
                     xtype: 'gridcolumn',
+                    dataIndex: 'id',
+                    text: 'Id'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    dataIndex: 'name',
+                    text: 'Name'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    dataIndex: 'branch',
+                    text: 'Branch'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    dataIndex: 'province',
+                    text: 'Province'
+                },
+                {
+                    xtype: 'datecolumn',
                     dataIndex: 'date',
-                    text: 'ชื่อสมาชิก'
-                },
-                {
-                    xtype: 'gridcolumn',
-                    dataIndex: 'bool',
-                    text: 'เป็นสมาชิกสาขา'
-                },
-                {
-                    xtype: 'gridcolumn',
-                    text: 'จังหวัด'
-                },
-                {
-                    xtype: 'gridcolumn',
-                    text: 'วันจัดตั้ง'
-                },
-                {
-                    xtype: 'actioncolumn',
-                    items: [
-                        {
-
-                        }
-                    ]
+                    text: 'Date'
                 }
             ]
         });

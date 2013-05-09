@@ -15,7 +15,7 @@
 
 Ext.define('MyApp.view.MyPanel', {
     extend: 'Ext.panel.Panel',
-    alias: 'widget.mypanel',
+    alias: 'widget.pn_find',
 
     height: 111,
     layout: {
@@ -49,6 +49,7 @@ Ext.define('MyApp.view.MyPanel', {
                     xtype: 'button',
                     x: 640,
                     y: 40,
+                    id: 'btn_add',
                     width: 70,
                     text: 'เพิ่ม'
                 },

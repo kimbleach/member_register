@@ -31,7 +31,7 @@ Ext.define('MyApp.view.MyViewport', {
         Ext.applyIf(me, {
             items: [
                 {
-                    xtype: 'mypanel',
+                    xtype: 'pn_find',
                     height: 113,
                     region: 'north'
                 },

@@ -6,10 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "height": 278,
+        "height": 332,
         "id": "wd_add",
-        "width": 581,
-        "designer|userClassName": "MyWindow",
+        "width": 643,
+        "designer|userClassName": "wd_add",
         "designer|userAlias": "wd_add",
         "title": "เพิ่มข้อมูลสมาชิก"
     },
@@ -24,9 +24,9 @@
             "codeClass": null,
             "userConfig": {
                 "designer|snapToGrid": 10,
-                "height": 247,
+                "height": 301,
                 "id": "f_addMember",
-                "width": 569,
+                "width": 635,
                 "layout": "absolute",
                 "bodyPadding": 10,
                 "title": null
@@ -41,7 +41,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|x": 40,
+                        "layout|x": 290,
                         "layout|y": 40,
                         "id": "group",
                         "fieldLabel": "กลุ่ม",
@@ -57,10 +57,11 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|x": 300,
+                        "layout|x": 40,
                         "layout|y": 40,
                         "id": "code",
-                        "fieldLabel": "รหัสสมาชิก"
+                        "fieldLabel": "รหัสสมาชิก",
+                        "labelWidth": 75
                     },
                     "designerId": "f04698a3-bc3c-42f9-ba96-d8176ec4e3ce"
                 },
@@ -179,6 +180,21 @@
                         "labelWidth": 110
                     },
                     "designerId": "7e4e431f-adc8-458a-93e0-d1beb83cca6d"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 500,
+                        "layout|y": 260,
+                        "width": 100,
+                        "text": "บันทึก"
+                    },
+                    "designerId": "4edb451c-46e0-4eb9-ad1c-5ede9ab1380e"
                 }
             ]
         }
