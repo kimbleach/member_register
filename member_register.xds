@@ -21,11 +21,29 @@
                 "metadata/resource/Library"
             ],
             "className": "Library"
+        },
+        "f15fdeb9-816e-4808-8f94-314393313b49": {
+            "paths": [
+                "metadata/view/MyGridPanel",
+                "app/view/override/MyGridPanel.js",
+                "app/view/MyGridPanel.js"
+            ],
+            "className": "MyGridPanel"
+        },
+        "f82daa23-a26c-4dca-a2ba-90f94a8b47a2": {
+            "paths": [
+                "metadata/view/MyPanel",
+                "app/view/override/MyPanel.js",
+                "app/view/MyPanel.js"
+            ],
+            "className": "MyPanel"
         }
     },
     "viewOrderMap": {
         "view": [
-            "343a388d-e6a3-4911-a668-e21cd84a9014"
+            "343a388d-e6a3-4911-a668-e21cd84a9014",
+            "f15fdeb9-816e-4808-8f94-314393313b49",
+            "f82daa23-a26c-4dca-a2ba-90f94a8b47a2"
         ],
         "store": [],
         "controller": [],

@@ -7,7 +7,37 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "MyViewport",
-        "designer|initialView": true
+        "designer|initialView": true,
+        "layout": "border"
     },
-    "designerId": "343a388d-e6a3-4911-a668-e21cd84a9014"
+    "designerId": "343a388d-e6a3-4911-a668-e21cd84a9014",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "north",
+                "height": 113
+            },
+            "designerId": "2bbc40b7-384f-445a-9544-dd5220b58651",
+            "masterInstanceId": "f82daa23-a26c-4dca-a2ba-90f94a8b47a2"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center"
+            },
+            "designerId": "5ff00922-0f95-4e21-a3ec-ff344be5dad0",
+            "masterInstanceId": "f15fdeb9-816e-4808-8f94-314393313b49"
+        }
+    ]
 }

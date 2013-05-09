@@ -16,8 +16,31 @@
 Ext.define('MyApp.view.MyViewport', {
     extend: 'Ext.container.Viewport',
 
+    requires: [
+        'MyApp.view.MyPanel',
+        'MyApp.view.MyGridPanel'
+    ],
+
+    layout: {
+        type: 'border'
+    },
+
     initComponent: function() {
         var me = this;
+
+        Ext.applyIf(me, {
+            items: [
+                {
+                    xtype: 'mypanel',
+                    region: 'north',
+                    height: 113
+                },
+                {
+                    xtype: 'mygridpanel',
+                    region: 'center'
+                }
+            ]
+        });
 
         me.callParent(arguments);
     }

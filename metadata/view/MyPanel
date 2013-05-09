@@ -1,0 +1,84 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|snapToGrid": 10,
+        "height": 111,
+        "width": null,
+        "designer|userClassName": "MyPanel",
+        "designer|userAlias": "mypanel",
+        "layout": "absolute",
+        "title": null
+    },
+    "designerId": "f82daa23-a26c-4dca-a2ba-90f94a8b47a2",
+    "cn": [
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 40,
+                "layout|y": 40,
+                "width": 180,
+                "fieldLabel": "ชื่อ",
+                "labelWidth": 30,
+                "name": "name"
+            },
+            "designerId": "b6ec519a-97ad-48b2-a660-ddfe66365633"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 270,
+                "layout|y": 40,
+                "width": 190,
+                "fieldLabel": "รหัส",
+                "labelWidth": 30,
+                "name": "id"
+            },
+            "designerId": "7e93d648-8a3b-4d5e-948a-e9f88bed9527"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 640,
+                "layout|y": 40,
+                "width": 70,
+                "text": "เพิ่ม"
+            },
+            "designerId": "2f545458-32f9-4d15-b08f-03c93e0f816f"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 530,
+                "layout|y": 40,
+                "width": 70,
+                "text": "ค้นหา"
+            },
+            "designerId": "c9fc9a0b-8759-4139-ab3f-b8afc576ab92"
+        }
+    ]
+}

@@ -1,0 +1,123 @@
+{
+    "type": "Ext.grid.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 174,
+        "width": null,
+        "designer|userClassName": "MyGridPanel",
+        "designer|userAlias": "mygridpanel",
+        "title": "ตารางข้อมูลสมาชิก"
+    },
+    "designerId": "f15fdeb9-816e-4808-8f94-314393313b49",
+    "cn": [
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "string",
+                "text": "ลำดับ"
+            },
+            "designerId": "81644dbd-7b09-41b6-bf46-f9207de8889e"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "number",
+                "text": "รหัสสมาชิก"
+            },
+            "designerId": "18a96d66-7911-4047-af67-1274f13a0e85"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "date",
+                "text": "ชื่อสมาชิก"
+            },
+            "designerId": "02ed790e-59e3-4e68-a04a-ca5a53fde5c3"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "bool",
+                "text": "เป็นสมาชิกสาขา"
+            },
+            "designerId": "f64f2f43-4503-4693-820e-91eeb6cfe433"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "text": "จังหวัด"
+            },
+            "designerId": "48c7d5a0-67f1-43f6-9eb5-883c48a9a02f"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "text": "วันจัดตั้ง"
+            },
+            "designerId": "82851e5f-cfde-4f8c-84a0-62b5524a0b8b"
+        },
+        {
+            "type": "Ext.grid.column.Action",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "85269f9c-11af-4167-928c-1059738f0696",
+            "cn": [
+                {
+                    "type": "actioncolumnitem",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "designerId": "a2171a1a-ae42-4e08-a04a-8bce2d561a55"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.View",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "70705291-0b7b-4825-ae34-2227b55b16c5"
+        }
+    ]
+}
