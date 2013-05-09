@@ -6,6 +6,12 @@
     },
     "codeClass": null,
     "userConfig": {
+        "models": [
+            "member"
+        ],
+        "stores": [
+            "MyStore"
+        ],
         "views": [
             "MyViewport",
             "MyGridPanel",

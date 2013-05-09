@@ -48,6 +48,22 @@
                 "app/view/MyWindow.js"
             ],
             "className": "MyWindow"
+        },
+        "adf49bc8-0b19-4577-83e2-aa0a4d6bdc3f": {
+            "paths": [
+                "metadata/store/MyStore",
+                "app/store/override/MyStore.js",
+                "app/store/MyStore.js"
+            ],
+            "className": "MyStore"
+        },
+        "ebf809ab-cadb-4e26-bfe9-56e579be6eec": {
+            "paths": [
+                "metadata/model/member",
+                "app/model/override/member.js",
+                "app/model/member.js"
+            ],
+            "className": "member"
         }
     },
     "viewOrderMap": {
@@ -57,9 +73,13 @@
             "343a388d-e6a3-4911-a668-e21cd84a9014",
             "3856b211-2416-49c3-b17c-7297580e4c53"
         ],
-        "store": [],
+        "store": [
+            "adf49bc8-0b19-4577-83e2-aa0a4d6bdc3f"
+        ],
         "controller": [],
-        "model": [],
+        "model": [
+            "ebf809ab-cadb-4e26-bfe9-56e579be6eec"
+        ],
         "resource": [
             "26f78045-332e-4a72-ac39-fe79f1652ea1"
         ],

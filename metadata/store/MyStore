@@ -1,0 +1,29 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "member",
+        "storeId": "MyStore",
+        "designer|userClassName": "MyStore"
+    },
+    "designerId": "adf49bc8-0b19-4577-83e2-aa0a4d6bdc3f",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/test.json"
+            },
+            "designerId": "cbb8af25-2f92-4dea-be2a-be25d7c8c9fe"
+        }
+    ]
+}
