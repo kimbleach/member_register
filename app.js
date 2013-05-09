@@ -21,8 +21,12 @@ Ext.Loader.setConfig({
 Ext.application({
     views: [
         'MyViewport',
+<<<<<<< HEAD
         'MyGridPanel',
         'MyPanel'
+=======
+        'MyWindow'
+>>>>>>> origin/deuanz
     ],
     autoCreateViewport: true,
     name: 'MyApp'

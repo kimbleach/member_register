@@ -1,0 +1,186 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 278,
+        "id": "wd_add",
+        "width": 581,
+        "designer|userClassName": "MyWindow",
+        "designer|userAlias": "wd_add",
+        "title": "เพิ่มข้อมูลสมาชิก"
+    },
+    "designerId": "3856b211-2416-49c3-b17c-7297580e4c53",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|snapToGrid": 10,
+                "height": 247,
+                "id": "f_addMember",
+                "width": 569,
+                "layout": "absolute",
+                "bodyPadding": 10,
+                "title": null
+            },
+            "designerId": "393bde73-6d98-4a8a-b7fa-a59bca844ac7",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 40,
+                        "layout|y": 40,
+                        "id": "group",
+                        "fieldLabel": "กลุ่ม",
+                        "labelWidth": 75
+                    },
+                    "designerId": "f60f19de-8585-4316-a602-488c96899d46"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 300,
+                        "layout|y": 40,
+                        "id": "code",
+                        "fieldLabel": "รหัสสมาชิก"
+                    },
+                    "designerId": "f04698a3-bc3c-42f9-ba96-d8176ec4e3ce"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 40,
+                        "layout|y": 80,
+                        "id": "name",
+                        "fieldLabel": "ชื่อสมาชิก",
+                        "labelWidth": 75
+                    },
+                    "designerId": "2c4ee03d-4441-4cb7-bed1-15793161b89a"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 40,
+                        "layout|y": 120,
+                        "id": "branch",
+                        "fieldLabel": "สาขา:",
+                        "labelWidth": 75
+                    },
+                    "designerId": "89ecf592-f288-478b-b282-746afbe26473"
+                },
+                {
+                    "type": "Ext.form.RadioGroup",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "-200",
+                        "layout|x": 40,
+                        "layout|y": 160,
+                        "id": "type",
+                        "width": null,
+                        "fieldLabel": "ประเภทสมาชิก",
+                        "labelWidth": 90
+                    },
+                    "designerId": "ffce7d07-fbdc-4f4f-afbc-05c3225999a3",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "associate",
+                                "fieldLabel": null,
+                                "labelWidth": 50,
+                                "inputId": "associate",
+                                "boxLabel": "สมาชิกสมทบ"
+                            },
+                            "designerId": "635e4989-713e-4fbd-bbe3-f0ba218656da"
+                        },
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "ordinary",
+                                "fieldLabel": null,
+                                "labelWidth": 50,
+                                "inputId": "ordinary",
+                                "boxLabel": "สมาชิกสามัญ"
+                            },
+                            "designerId": "e9315781-1507-4a71-9b4a-a242c2763b4d"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 40,
+                        "layout|y": 200,
+                        "id": "dateEstablish",
+                        "fieldLabel": "วันจัดตั้งกลุ่ม",
+                        "labelWidth": 75
+                    },
+                    "designerId": "9aa2561b-e9c7-40fc-9d14-a3e7a97dbc75"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 300,
+                        "layout|y": 200,
+                        "id": "firstShare",
+                        "fieldLabel": "จำนวนหุ้นถือครั้งแรก",
+                        "labelWidth": 110
+                    },
+                    "designerId": "7e4e431f-adc8-458a-93e0-d1beb83cca6d"
+                }
+            ]
+        }
+    ]
+}
