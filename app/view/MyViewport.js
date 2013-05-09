@@ -16,14 +16,11 @@
 Ext.define('MyApp.view.MyViewport', {
     extend: 'Ext.container.Viewport',
 
-<<<<<<< HEAD
     requires: [
         'MyApp.view.MyPanel',
         'MyApp.view.MyGridPanel'
     ],
 
-=======
->>>>>>> origin/deuanz
     layout: {
         type: 'border'
     },
@@ -35,8 +32,8 @@ Ext.define('MyApp.view.MyViewport', {
             items: [
                 {
                     xtype: 'mypanel',
-                    region: 'north',
-                    height: 113
+                    height: 113,
+                    region: 'north'
                 },
                 {
                     xtype: 'mygridpanel',
