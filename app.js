@@ -20,7 +20,8 @@ Ext.Loader.setConfig({
 
 Ext.application({
     views: [
-        'MyViewport'
+        'MyViewport',
+        'MyWindow'
     ],
     autoCreateViewport: true,
     name: 'MyApp'

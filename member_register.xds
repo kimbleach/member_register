@@ -1,6 +1,9 @@
 {
     "name": "member_register",
-    "settings": {},
+    "settings": {
+        "urlPrefix": "http://localhost/member_register/",
+        "exportPath": ""
+    },
     "xdsVersion": "2.2.2",
     "xdsBuild": 971,
     "schemaVersion": 1,
@@ -21,11 +24,20 @@
                 "metadata/resource/Library"
             ],
             "className": "Library"
+        },
+        "3856b211-2416-49c3-b17c-7297580e4c53": {
+            "paths": [
+                "metadata/view/MyWindow",
+                "app/view/override/MyWindow.js",
+                "app/view/MyWindow.js"
+            ],
+            "className": "MyWindow"
         }
     },
     "viewOrderMap": {
         "view": [
-            "343a388d-e6a3-4911-a668-e21cd84a9014"
+            "343a388d-e6a3-4911-a668-e21cd84a9014",
+            "3856b211-2416-49c3-b17c-7297580e4c53"
         ],
         "store": [],
         "controller": [],

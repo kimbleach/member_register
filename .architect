@@ -8,21 +8,62 @@
         "343a388d-e6a3-4911-a668-e21cd84a9014": {
             "id": "343a388d-e6a3-4911-a668-e21cd84a9014"
         },
+        "3856b211-2416-49c3-b17c-7297580e4c53": {
+            "id": "3856b211-2416-49c3-b17c-7297580e4c53",
+            "expanded": false,
+            "cn": [
+                {
+                    "id": "393bde73-6d98-4a8a-b7fa-a59bca844ac7",
+                    "cn": [
+                        {
+                            "id": "f60f19de-8585-4316-a602-488c96899d46"
+                        },
+                        {
+                            "id": "f04698a3-bc3c-42f9-ba96-d8176ec4e3ce"
+                        },
+                        {
+                            "id": "2c4ee03d-4441-4cb7-bed1-15793161b89a"
+                        },
+                        {
+                            "id": "89ecf592-f288-478b-b282-746afbe26473"
+                        },
+                        {
+                            "id": "ffce7d07-fbdc-4f4f-afbc-05c3225999a3",
+                            "cn": [
+                                {
+                                    "id": "635e4989-713e-4fbd-bbe3-f0ba218656da"
+                                },
+                                {
+                                    "id": "e9315781-1507-4a71-9b4a-a242c2763b4d"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "9aa2561b-e9c7-40fc-9d14-a3e7a97dbc75"
+                        },
+                        {
+                            "id": "7e4e431f-adc8-458a-93e0-d1beb83cca6d"
+                        }
+                    ]
+                }
+            ]
+        },
         "26f78045-332e-4a72-ac39-fe79f1652ea1": {
             "id": "26f78045-332e-4a72-ac39-fe79f1652ea1"
         }
     },
     "tabState": {
         "openTabs": [
-            "343a388d-e6a3-4911-a668-e21cd84a9014"
+            "343a388d-e6a3-4911-a668-e21cd84a9014",
+            "3856b211-2416-49c3-b17c-7297580e4c53"
         ]
     },
     "canvasState": {
-        "topInstance": "343a388d-e6a3-4911-a668-e21cd84a9014"
+        "topInstance": "3856b211-2416-49c3-b17c-7297580e4c53"
     },
     "inspectorState": {
-        "topInstance": "343a388d-e6a3-4911-a668-e21cd84a9014",
-        "selectedInstance": "343a388d-e6a3-4911-a668-e21cd84a9014"
+        "topInstance": "3856b211-2416-49c3-b17c-7297580e4c53",
+        "selectedInstance": "3856b211-2416-49c3-b17c-7297580e4c53"
     },
     "codeState": {
         "topInstance": null
