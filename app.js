@@ -23,7 +23,7 @@ Ext.application({
         'member'
     ],
     stores: [
-        'MyStore'
+        'member'
     ],
     views: [
         'MyViewport',

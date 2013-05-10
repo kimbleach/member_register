@@ -18,10 +18,13 @@ Ext.define('MyApp.model.member', {
 
     fields: [
         {
-            name: 'number'
+            name: 'id'
         },
         {
-            name: 'id'
+            name: 'code'
+        },
+        {
+            name: 'group'
         },
         {
             name: 'name'
@@ -30,11 +33,13 @@ Ext.define('MyApp.model.member', {
             name: 'branch'
         },
         {
-            name: 'province'
+            name: 'type'
         },
         {
-            name: 'date',
-            type: 'date'
+            name: 'date_start'
+        },
+        {
+            name: 'share_first'
         }
     ]
 });

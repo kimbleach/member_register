@@ -49,22 +49,6 @@
             ],
             "className": "wd_add"
         },
-        "adf49bc8-0b19-4577-83e2-aa0a4d6bdc3f": {
-            "paths": [
-                "metadata/store/MyStore",
-                "app/store/override/MyStore.js",
-                "app/store/MyStore.js"
-            ],
-            "className": "MyStore"
-        },
-        "ebf809ab-cadb-4e26-bfe9-56e579be6eec": {
-            "paths": [
-                "metadata/model/member",
-                "app/model/override/member.js",
-                "app/model/member.js"
-            ],
-            "className": "member"
-        },
         "f222acc8-72e5-4759-a0ff-4737fd7a973b": {
             "paths": [
                 "metadata/controller/MyController",
@@ -72,6 +56,22 @@
                 "app/controller/MyController.js"
             ],
             "className": "MyController"
+        },
+        "7cd0c10b-45ad-46e1-92a4-1bbe78776e03": {
+            "paths": [
+                "metadata/store/member",
+                "app/store/override/member.js",
+                "app/store/member.js"
+            ],
+            "className": "member"
+        },
+        "ad9ad110-e988-4a70-9907-eca16db8c81b": {
+            "paths": [
+                "metadata/model/member",
+                "app/model/override/member.js",
+                "app/model/member.js"
+            ],
+            "className": "member"
         }
     },
     "viewOrderMap": {
@@ -82,13 +82,13 @@
             "3856b211-2416-49c3-b17c-7297580e4c53"
         ],
         "store": [
-            "adf49bc8-0b19-4577-83e2-aa0a4d6bdc3f"
+            "7cd0c10b-45ad-46e1-92a4-1bbe78776e03"
         ],
         "controller": [
             "f222acc8-72e5-4759-a0ff-4737fd7a973b"
         ],
         "model": [
-            "ebf809ab-cadb-4e26-bfe9-56e579be6eec"
+            "ad9ad110-e988-4a70-9907-eca16db8c81b"
         ],
         "resource": [
             "26f78045-332e-4a72-ac39-fe79f1652ea1"

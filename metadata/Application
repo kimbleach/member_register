@@ -10,7 +10,7 @@
             "member"
         ],
         "stores": [
-            "MyStore"
+            "member"
         ],
         "views": [
             "MyViewport",

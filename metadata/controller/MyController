@@ -22,12 +22,12 @@
                 "implHandler": [
                     "console.log('sdddddd');\r",
                     "\r",
-                    "  var pnWindow = this.getAddInfo();\r",
+                    "var pnWindow = this.getAddInfo();\r",
                     "\r",
-                    "        if(!pnWindow){\r",
-                    "            pnWindow = Ext.create('MyApp.view.wd_add');\r",
-                    "            pnWindow.show();\r",
-                    "        }"
+                    "if(!pnWindow){\r",
+                    "    pnWindow = Ext.create('MyApp.view.wd_add');\r",
+                    "    pnWindow.show();\r",
+                    "}"
                 ],
                 "name": "click",
                 "scope": "me",

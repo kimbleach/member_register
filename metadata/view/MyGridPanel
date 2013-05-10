@@ -11,7 +11,7 @@
         "designer|userClassName": "MyGridPanel",
         "designer|userAlias": "mygridpanel",
         "title": "ตารางข้อมูลสมาชิก",
-        "store": "MyStore"
+        "store": "member"
     },
     "designerId": "f15fdeb9-816e-4808-8f94-314393313b49",
     "cn": [
@@ -32,10 +32,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "dataIndex": "number",
-                "text": "Number"
+                "dataIndex": "id",
+                "text": "Id"
             },
-            "designerId": "5611bfe0-347e-4ff3-bb62-0513fd04f6ee"
+            "designerId": "341e7428-7aa8-47bf-a042-6041aa36fbcc"
         },
         {
             "type": "Ext.grid.column.Column",
@@ -45,10 +45,23 @@
             },
             "codeClass": null,
             "userConfig": {
-                "dataIndex": "id",
-                "text": "Id"
+                "dataIndex": "code",
+                "text": "Code"
             },
-            "designerId": "73e0bb5f-8418-433b-a024-6b659d08bf20"
+            "designerId": "7d073028-e57b-4a68-b1b5-20db00c879e1"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "group",
+                "text": "Group"
+            },
+            "designerId": "2e53e317-5b15-4f6c-b9dd-2b574b4a5330"
         },
         {
             "type": "Ext.grid.column.Column",
@@ -61,7 +74,7 @@
                 "dataIndex": "name",
                 "text": "Name"
             },
-            "designerId": "e3e96749-212e-419f-b72e-c44686c31fb3"
+            "designerId": "4f3f883a-8368-4c9f-9744-5a11946961be"
         },
         {
             "type": "Ext.grid.column.Column",
@@ -74,7 +87,7 @@
                 "dataIndex": "branch",
                 "text": "Branch"
             },
-            "designerId": "d6d03eb9-b8f9-430f-bec3-51d7d49535e2"
+            "designerId": "4bd123a9-69a6-4d35-91c1-be50336b2f36"
         },
         {
             "type": "Ext.grid.column.Column",
@@ -84,23 +97,36 @@
             },
             "codeClass": null,
             "userConfig": {
-                "dataIndex": "province",
-                "text": "Province"
+                "dataIndex": "type",
+                "text": "Type"
             },
-            "designerId": "9be54687-eaf3-4a25-b9e7-e595ef38ffe0"
+            "designerId": "a48318cb-7697-4065-a91f-b4f0c86be6c2"
         },
         {
-            "type": "Ext.grid.column.Date",
+            "type": "Ext.grid.column.Column",
             "reference": {
                 "name": "columns",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "dataIndex": "date",
-                "text": "Date"
+                "dataIndex": "date_start",
+                "text": "Date_start"
             },
-            "designerId": "cea5e88f-f69b-4de9-ba62-3cc3176da729"
+            "designerId": "9e1a5f61-7c4f-49da-a0f8-15fb2abbc91f"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "share_first",
+                "text": "Share_first"
+            },
+            "designerId": "4a7b08dd-9ae9-46b4-b972-8a44b3c5650a"
         }
     ]
 }
