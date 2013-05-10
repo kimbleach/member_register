@@ -24,10 +24,12 @@ Ext.define('MyApp.store.member', {
         var me = this;
         cfg = cfg || {};
         me.callParent([Ext.apply({
+            autoLoad: true,
             model: 'MyApp.model.member',
             storeId: 'member',
             proxy: {
                 type: 'ajax',
+                url: 'data/test.json',
                 reader: {
                     type: 'json'
                 }

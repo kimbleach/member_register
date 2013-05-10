@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "autoLoad": true,
         "model": "member",
         "storeId": "member",
         "designer|userClassName": "member"
@@ -20,7 +21,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": null
+                "url": "data/test.json"
             },
             "designerId": "f0e77040-e30d-4d1e-a06a-00d4c55fa70e",
             "cn": [
