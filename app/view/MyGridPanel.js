@@ -19,7 +19,7 @@ Ext.define('MyApp.view.MyGridPanel', {
 
     height: 174,
     title: 'ตารางข้อมูลสมาชิก',
-    store: 'member',
+    store: 'memberStore',
 
     initComponent: function() {
         var me = this;
@@ -33,8 +33,13 @@ Ext.define('MyApp.view.MyGridPanel', {
                 },
                 {
                     xtype: 'gridcolumn',
-                    dataIndex: 'code',
-                    text: 'Code'
+                    dataIndex: 'code_mem',
+                    text: 'Code_mem'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    dataIndex: 'name_mem',
+                    text: 'Name_mem'
                 },
                 {
                     xtype: 'gridcolumn',
@@ -43,13 +48,18 @@ Ext.define('MyApp.view.MyGridPanel', {
                 },
                 {
                     xtype: 'gridcolumn',
-                    dataIndex: 'name',
-                    text: 'Name'
+                    dataIndex: 'branch',
+                    text: 'Branch'
                 },
                 {
                     xtype: 'gridcolumn',
-                    dataIndex: 'branch',
-                    text: 'Branch'
+                    dataIndex: 'zone',
+                    text: 'Zone'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    dataIndex: 'province',
+                    text: 'Province'
                 },
                 {
                     xtype: 'gridcolumn',

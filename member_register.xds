@@ -59,19 +59,67 @@
         },
         "7cd0c10b-45ad-46e1-92a4-1bbe78776e03": {
             "paths": [
-                "metadata/store/member",
-                "app/store/override/member.js",
-                "app/store/member.js"
+                "metadata/store/type",
+                "app/store/override/type.js",
+                "app/store/type.js"
             ],
-            "className": "member"
+            "className": "type"
         },
         "ad9ad110-e988-4a70-9907-eca16db8c81b": {
+            "paths": [
+                "metadata/model/type",
+                "app/model/override/type.js",
+                "app/model/type.js"
+            ],
+            "className": "type"
+        },
+        "8e6a281b-92ce-49e7-b55c-7ac1f51ed4e0": {
+            "paths": [
+                "metadata/store/memberStore",
+                "app/store/override/memberStore.js",
+                "app/store/memberStore.js"
+            ],
+            "className": "memberStore"
+        },
+        "36775b53-03e3-49c0-9ed2-62063d3fd6ae": {
             "paths": [
                 "metadata/model/member",
                 "app/model/override/member.js",
                 "app/model/member.js"
             ],
             "className": "member"
+        },
+        "0d1811bb-0ce9-4fe6-82c1-cfbd5c353e8a": {
+            "paths": [
+                "metadata/store/groupStore",
+                "app/store/override/groupStore.js",
+                "app/store/groupStore.js"
+            ],
+            "className": "groupStore"
+        },
+        "d649fca2-ae8b-4527-844c-92738d4287e8": {
+            "paths": [
+                "metadata/model/group",
+                "app/model/override/group.js",
+                "app/model/group.js"
+            ],
+            "className": "group"
+        },
+        "fef40820-d16e-4c61-8da8-30c13e5f0552": {
+            "paths": [
+                "metadata/store/branchStore",
+                "app/store/override/branchStore.js",
+                "app/store/branchStore.js"
+            ],
+            "className": "branchStore"
+        },
+        "4a7e3125-eb4d-4277-a824-b4134fe626af": {
+            "paths": [
+                "metadata/model/branch",
+                "app/model/override/branch.js",
+                "app/model/branch.js"
+            ],
+            "className": "branch"
         }
     },
     "viewOrderMap": {
@@ -82,13 +130,19 @@
             "3856b211-2416-49c3-b17c-7297580e4c53"
         ],
         "store": [
-            "7cd0c10b-45ad-46e1-92a4-1bbe78776e03"
+            "7cd0c10b-45ad-46e1-92a4-1bbe78776e03",
+            "8e6a281b-92ce-49e7-b55c-7ac1f51ed4e0",
+            "0d1811bb-0ce9-4fe6-82c1-cfbd5c353e8a",
+            "fef40820-d16e-4c61-8da8-30c13e5f0552"
         ],
         "controller": [
             "f222acc8-72e5-4759-a0ff-4737fd7a973b"
         ],
         "model": [
-            "ad9ad110-e988-4a70-9907-eca16db8c81b"
+            "ad9ad110-e988-4a70-9907-eca16db8c81b",
+            "36775b53-03e3-49c0-9ed2-62063d3fd6ae",
+            "d649fca2-ae8b-4527-844c-92738d4287e8",
+            "4a7e3125-eb4d-4277-a824-b4134fe626af"
         ],
         "resource": [
             "26f78045-332e-4a72-ac39-fe79f1652ea1"

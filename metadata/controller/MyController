@@ -20,8 +20,6 @@
             "userConfig": {
                 "fn": "onButtonClick",
                 "implHandler": [
-                    "console.log('sdddddd');\r",
-                    "\r",
                     "var pnWindow = this.getAddInfo();\r",
                     "\r",
                     "if(!pnWindow){\r",
@@ -48,6 +46,90 @@
                 "selector": "wd_add"
             },
             "designerId": "ee74ca2b-288d-45ae-8b4f-262711926338"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "saveInfo",
+                "implHandler": [
+                    "var win    = button.up('window'),\r",
+                    "    form   = win.down('form'),\r",
+                    "    record = form.getRecord(),\r",
+                    "    values = form.getValues(),\r",
+                    "    store = Ext.data.StoreManager.get(\"member\");\r",
+                    "\r",
+                    "var isNew = false;\r",
+                    "\r",
+                    "record = Ext.create('MyApp.model.member');\r",
+                    "record.set(values);\r",
+                    "store.add(record);\r",
+                    "isNew = true;\r",
+                    "\r",
+                    "\r",
+                    "\r",
+                    "urlAccount = '/member_register/php/criaContato.php';\r",
+                    "var stores = 'member';\r",
+                    "Ext.data.StoreManager.lookup(stores);\r",
+                    "Ext.data.StoreManager.lookup(stores).getProxy().url = urlAccount;\r",
+                    "Ext.data.StoreManager.lookup(stores).load();\r",
+                    "\r",
+                    "win.close();\r",
+                    "\r",
+                    "\r",
+                    "/*store.sync({\r",
+                    "success : function() {\r",
+                    "if (isNew){\r",
+                    "store.load();\r",
+                    "}\r",
+                    "}\r",
+                    "});*/"
+                ],
+                "name": "click",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Button",
+                "designer|controlQuery": "wd_add #btn_save"
+            },
+            "designerId": "e0ce7cf9-bf69-4495-9857-94eec0e153e7"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onComboboxSelect",
+                "implHandler": [
+                    "var branchId = combo.valueModels[0].data.id,\r",
+                    "    urlBank = 'data/readRecordBank.php?idBranch='+branchId;\r",
+                    "\r",
+                    "var store = 'bankStore';\r",
+                    "Ext.data.StoreManager.lookup(store);\r",
+                    "Ext.data.StoreManager.lookup(store).getProxy().url = urlBank;\r",
+                    "Ext.data.StoreManager.lookup(store).load({\r",
+                    "    scope: this,\r",
+                    "    callback: function(records, operation, success) {\r",
+                    "        if (success) {\r",
+                    "            Ext.getCmp('bookBank').setValue('');\r",
+                    "            Ext.getCmp('accountNo').setValue('');\r",
+                    "        } else {\r",
+                    "            console.log('error');\r",
+                    "        }\r",
+                    "    }\r",
+                    "});"
+                ],
+                "name": "select",
+                "scope": "me",
+                "designer|targetType": "Ext.form.field.ComboBox",
+                "designer|controlQuery": "#branch"
+            },
+            "designerId": "826e62ea-77c2-48a5-989f-f8d12af5d285"
         }
     ]
 }

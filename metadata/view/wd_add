@@ -34,7 +34,7 @@
             "designerId": "393bde73-6d98-4a8a-b7fa-a59bca844ac7",
             "cn": [
                 {
-                    "type": "Ext.form.field.Text",
+                    "type": "Ext.form.field.ComboBox",
                     "reference": {
                         "name": "items",
                         "type": "array"
@@ -45,7 +45,11 @@
                         "layout|y": 40,
                         "id": "group",
                         "fieldLabel": "กลุ่ม",
-                        "labelWidth": 75
+                        "labelWidth": 75,
+                        "name": "group",
+                        "displayField": "group",
+                        "store": "groupStore",
+                        "valueField": "group"
                     },
                     "designerId": "f60f19de-8585-4316-a602-488c96899d46"
                 },
@@ -61,7 +65,8 @@
                         "layout|y": 40,
                         "id": "code",
                         "fieldLabel": "รหัสสมาชิก",
-                        "labelWidth": 75
+                        "labelWidth": 75,
+                        "name": "code_mem"
                     },
                     "designerId": "f04698a3-bc3c-42f9-ba96-d8176ec4e3ce"
                 },
@@ -77,12 +82,13 @@
                         "layout|y": 80,
                         "id": "name",
                         "fieldLabel": "ชื่อสมาชิก",
-                        "labelWidth": 75
+                        "labelWidth": 75,
+                        "name": "name"
                     },
                     "designerId": "2c4ee03d-4441-4cb7-bed1-15793161b89a"
                 },
                 {
-                    "type": "Ext.form.field.Text",
+                    "type": "Ext.form.field.ComboBox",
                     "reference": {
                         "name": "items",
                         "type": "array"
@@ -92,8 +98,13 @@
                         "layout|x": 40,
                         "layout|y": 120,
                         "id": "branch",
+                        "width": 500,
                         "fieldLabel": "สาขา:",
-                        "labelWidth": 75
+                        "labelWidth": 75,
+                        "name": "branch",
+                        "displayField": "branch",
+                        "store": "branchStore",
+                        "valueField": "branch"
                     },
                     "designerId": "89ecf592-f288-478b-b282-746afbe26473"
                 },
@@ -126,6 +137,7 @@
                                 "id": "associate",
                                 "fieldLabel": null,
                                 "labelWidth": 50,
+                                "name": "type",
                                 "inputId": "associate",
                                 "boxLabel": "สมาชิกสมทบ"
                             },
@@ -159,9 +171,10 @@
                     "userConfig": {
                         "layout|x": 40,
                         "layout|y": 200,
-                        "id": "dateEstablish",
+                        "id": "date_start",
                         "fieldLabel": "วันจัดตั้งกลุ่ม",
-                        "labelWidth": 75
+                        "labelWidth": 75,
+                        "name": "date_start"
                     },
                     "designerId": "9aa2561b-e9c7-40fc-9d14-a3e7a97dbc75"
                 },
@@ -175,9 +188,10 @@
                     "userConfig": {
                         "layout|x": 300,
                         "layout|y": 200,
-                        "id": "firstShare",
+                        "id": "share_first",
                         "fieldLabel": "จำนวนหุ้นถือครั้งแรก",
-                        "labelWidth": 110
+                        "labelWidth": 110,
+                        "name": "share_first"
                     },
                     "designerId": "7e4e431f-adc8-458a-93e0-d1beb83cca6d"
                 },
@@ -191,6 +205,7 @@
                     "userConfig": {
                         "layout|x": 500,
                         "layout|y": 260,
+                        "id": "btn_save",
                         "width": 100,
                         "text": "บันทึก"
                     },

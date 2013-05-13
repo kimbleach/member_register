@@ -1,0 +1,10 @@
+﻿var urldata='../project10/php/listaContatos.php?name='+dataInput;
+
+console.log(urldata);
+var ds = 'tsicStore';
+Ext.data.StoreManager.lookup(ds);
+Ext.data.StoreManager.lookup(ds).getProxy().url = urldata;
+Ext.data.StoreManager.lookup(ds).load();
+
+
+											

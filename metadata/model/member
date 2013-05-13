@@ -8,7 +8,7 @@
     "userConfig": {
         "designer|userClassName": "member"
     },
-    "designerId": "ad9ad110-e988-4a70-9907-eca16db8c81b",
+    "designerId": "36775b53-03e3-49c0-9ed2-62063d3fd6ae",
     "cn": [
         {
             "type": "Ext.data.Field",
@@ -20,7 +20,7 @@
             "userConfig": {
                 "name": "id"
             },
-            "designerId": "37485b67-e39f-4137-aeba-de169cb8ca29"
+            "designerId": "ecfc0d55-bca7-43bf-a1b0-a079c050dea4"
         },
         {
             "type": "Ext.data.Field",
@@ -30,9 +30,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "code"
+                "name": "code_mem"
             },
-            "designerId": "ff00b356-93e2-4363-b69c-8af68e308b3b"
+            "designerId": "806104c2-419d-4976-b046-62f86daff483"
         },
         {
             "type": "Ext.data.Field",
@@ -42,21 +42,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "group"
+                "name": "name_mem"
             },
-            "designerId": "08642610-94f6-4f71-9259-d31525b5a1da"
-        },
-        {
-            "type": "Ext.data.Field",
-            "reference": {
-                "name": "fields",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "name": "name"
-            },
-            "designerId": "6968b364-dd18-4f96-bd13-e98218b24637"
+            "designerId": "e95633cd-a1a3-445f-a0e7-11bc9b229991"
         },
         {
             "type": "Ext.data.Field",
@@ -68,19 +56,7 @@
             "userConfig": {
                 "name": "branch"
             },
-            "designerId": "0b283287-dabb-46ee-bc66-8ee81f126a72"
-        },
-        {
-            "type": "Ext.data.Field",
-            "reference": {
-                "name": "fields",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "name": "type"
-            },
-            "designerId": "81d9820b-8d46-4a3f-88d0-49f81b13c89c"
+            "designerId": "9c8b32a5-b08b-4ed1-98f1-7d938ce09e85"
         },
         {
             "type": "Ext.data.Field",
@@ -92,7 +68,7 @@
             "userConfig": {
                 "name": "date_start"
             },
-            "designerId": "16881067-44e4-40fb-9bb6-283bf4dd3152"
+            "designerId": "89fe9e39-9b94-484c-8903-1d4356275f67"
         },
         {
             "type": "Ext.data.Field",
@@ -104,7 +80,55 @@
             "userConfig": {
                 "name": "share_first"
             },
-            "designerId": "7ac8023a-1c53-4cb5-8240-854d7b2f1f63"
+            "designerId": "b102d241-e25d-41fa-8e6d-c1d2fdba8acd"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "group"
+            },
+            "designerId": "b405e3f6-36fb-48c7-b509-b8c3e96c688c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "type"
+            },
+            "designerId": "931243ee-5806-42dd-8418-15937e6a0b8f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "zone"
+            },
+            "designerId": "4d85d142-fd8d-46f6-b729-e7e2206debd6"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "province"
+            },
+            "designerId": "b4707623-9184-49ce-9aa6-133fa5e9f78f"
         }
     ]
 }
