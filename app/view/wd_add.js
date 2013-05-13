@@ -38,12 +38,16 @@ Ext.define('MyApp.view.wd_add', {
                     bodyPadding: 10,
                     items: [
                         {
-                            xtype: 'textfield',
+                            xtype: 'combobox',
                             x: 290,
                             y: 40,
                             id: 'group',
                             fieldLabel: 'กลุ่ม',
-                            labelWidth: 75
+                            labelWidth: 75,
+                            name: 'group',
+                            displayField: 'group',
+                            store: 'groupStore',
+                            valueField: 'group'
                         },
                         {
                             xtype: 'textfield',
@@ -51,7 +55,8 @@ Ext.define('MyApp.view.wd_add', {
                             y: 40,
                             id: 'code',
                             fieldLabel: 'รหัสสมาชิก',
-                            labelWidth: 75
+                            labelWidth: 75,
+                            name: 'code_mem'
                         },
                         {
                             xtype: 'textfield',
@@ -59,15 +64,21 @@ Ext.define('MyApp.view.wd_add', {
                             y: 80,
                             id: 'name',
                             fieldLabel: 'ชื่อสมาชิก',
-                            labelWidth: 75
+                            labelWidth: 75,
+                            name: 'name'
                         },
                         {
-                            xtype: 'textfield',
+                            xtype: 'combobox',
                             x: 40,
                             y: 120,
                             id: 'branch',
+                            width: 500,
                             fieldLabel: 'สาขา:',
-                            labelWidth: 75
+                            labelWidth: 75,
+                            name: 'branch',
+                            displayField: 'branch',
+                            store: 'branchStore',
+                            valueField: 'branch'
                         },
                         {
                             xtype: 'radiogroup',
@@ -82,6 +93,7 @@ Ext.define('MyApp.view.wd_add', {
                                     xtype: 'radiofield',
                                     id: 'associate',
                                     labelWidth: 50,
+                                    name: 'type',
                                     inputId: 'associate',
                                     boxLabel: 'สมาชิกสมทบ'
                                 },
@@ -98,22 +110,25 @@ Ext.define('MyApp.view.wd_add', {
                             xtype: 'datefield',
                             x: 40,
                             y: 200,
-                            id: 'dateEstablish',
+                            id: 'date_start',
                             fieldLabel: 'วันจัดตั้งกลุ่ม',
-                            labelWidth: 75
+                            labelWidth: 75,
+                            name: 'date_start'
                         },
                         {
                             xtype: 'numberfield',
                             x: 300,
                             y: 200,
-                            id: 'firstShare',
+                            id: 'share_first',
                             fieldLabel: 'จำนวนหุ้นถือครั้งแรก',
-                            labelWidth: 110
+                            labelWidth: 110,
+                            name: 'share_first'
                         },
                         {
                             xtype: 'button',
                             x: 500,
                             y: 260,
+                            id: 'btn_save',
                             width: 100,
                             text: 'บันทึก'
                         }

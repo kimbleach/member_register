@@ -24,8 +24,6 @@ Ext.define('MyApp.controller.MyController', {
     ],
 
     onButtonClick: function(button, e, eOpts) {
-        console.log('sdddddd');
-
         var pnWindow = this.getAddInfo();
 
         if(!pnWindow){
@@ -34,10 +32,70 @@ Ext.define('MyApp.controller.MyController', {
         }
     },
 
+    saveInfo: function(button, e, eOpts) {
+        var win    = button.up('window'),
+            form   = win.down('form'),
+            record = form.getRecord(),
+            values = form.getValues(),
+            store = Ext.data.StoreManager.get("member");
+
+        var isNew = false;
+
+        record = Ext.create('MyApp.model.member');
+        record.set(values);
+        store.add(record);
+        isNew = true;
+
+
+
+        urlAccount = '/member_register/php/criaContato.php';
+        var stores = 'member';
+        Ext.data.StoreManager.lookup(stores);
+        Ext.data.StoreManager.lookup(stores).getProxy().url = urlAccount;
+        Ext.data.StoreManager.lookup(stores).load();
+
+        win.close();
+
+
+        /*store.sync({
+        success : function() {
+        if (isNew){
+        store.load();
+        }
+        }
+        });*/
+    },
+
+    onComboboxSelect: function(combo, records, eOpts) {
+        var branchId = combo.valueModels[0].data.id,
+            urlBank = 'data/readRecordBank.php?idBranch='+branchId;
+
+        var store = 'bankStore';
+        Ext.data.StoreManager.lookup(store);
+        Ext.data.StoreManager.lookup(store).getProxy().url = urlBank;
+        Ext.data.StoreManager.lookup(store).load({
+            scope: this,
+            callback: function(records, operation, success) {
+                if (success) {
+                    Ext.getCmp('bookBank').setValue('');
+                    Ext.getCmp('accountNo').setValue('');
+                } else {
+                    console.log('error');
+                }
+            }
+        });
+    },
+
     init: function(application) {
         this.control({
             "pn_find #btn_add": {
                 click: this.onButtonClick
+            },
+            "wd_add #btn_save": {
+                click: this.saveInfo
+            },
+            "#branch": {
+                select: this.onComboboxSelect
             }
         });
     }

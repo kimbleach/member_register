@@ -6,11 +6,11 @@
     },
     "codeClass": null,
     "userConfig": {
-        "model": "member",
-        "storeId": "member",
-        "designer|userClassName": "member"
+        "model": "branch",
+        "storeId": "MyJsonStore3",
+        "designer|userClassName": "branchStore"
     },
-    "designerId": "7cd0c10b-45ad-46e1-92a4-1bbe78776e03",
+    "designerId": "fef40820-d16e-4c61-8da8-30c13e5f0552",
     "cn": [
         {
             "type": "Ext.data.proxy.Ajax",
@@ -20,9 +20,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": null
+                "url": "php/branch.php"
             },
-            "designerId": "f0e77040-e30d-4d1e-a06a-00d4c55fa70e",
+            "designerId": "1cea1cf0-f67a-4d7f-8f55-861f3df87932",
             "cn": [
                 {
                     "type": "Ext.data.reader.Json",
@@ -31,7 +31,10 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "designerId": "f19e938d-de59-433e-a931-3fb27c9b4749"
+                    "userConfig": {
+                        "root": "contacts"
+                    },
+                    "designerId": "cb1141b9-515f-42fb-b6d2-fad03c76e33c"
                 }
             ]
         }

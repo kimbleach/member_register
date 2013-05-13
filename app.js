@@ -20,10 +20,15 @@ Ext.Loader.setConfig({
 
 Ext.application({
     models: [
-        'member'
+        'member',
+        'group',
+        'branch'
     ],
     stores: [
-        'member'
+        'type',
+        'memberStore',
+        'groupStore',
+        'branchStore'
     ],
     views: [
         'MyViewport',

@@ -11,7 +11,7 @@
         "designer|userClassName": "MyGridPanel",
         "designer|userAlias": "mygridpanel",
         "title": "ตารางข้อมูลสมาชิก",
-        "store": "member"
+        "store": "memberStore"
     },
     "designerId": "f15fdeb9-816e-4808-8f94-314393313b49",
     "cn": [
@@ -35,7 +35,7 @@
                 "dataIndex": "id",
                 "text": "Id"
             },
-            "designerId": "341e7428-7aa8-47bf-a042-6041aa36fbcc"
+            "designerId": "e5cbd9d4-ccaf-44fd-97bc-4681b997bb5f"
         },
         {
             "type": "Ext.grid.column.Column",
@@ -45,10 +45,23 @@
             },
             "codeClass": null,
             "userConfig": {
-                "dataIndex": "code",
-                "text": "Code"
+                "dataIndex": "code_mem",
+                "text": "Code_mem"
             },
-            "designerId": "7d073028-e57b-4a68-b1b5-20db00c879e1"
+            "designerId": "fe960200-1b38-4c70-93bd-e8d05a423a27"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "name_mem",
+                "text": "Name_mem"
+            },
+            "designerId": "ccf29aa6-f80e-4522-90a2-1814bdeacc03"
         },
         {
             "type": "Ext.grid.column.Column",
@@ -61,20 +74,7 @@
                 "dataIndex": "group",
                 "text": "Group"
             },
-            "designerId": "2e53e317-5b15-4f6c-b9dd-2b574b4a5330"
-        },
-        {
-            "type": "Ext.grid.column.Column",
-            "reference": {
-                "name": "columns",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "dataIndex": "name",
-                "text": "Name"
-            },
-            "designerId": "4f3f883a-8368-4c9f-9744-5a11946961be"
+            "designerId": "a03f3a7c-7187-4faa-b5a0-f02a15ba6042"
         },
         {
             "type": "Ext.grid.column.Column",
@@ -87,7 +87,33 @@
                 "dataIndex": "branch",
                 "text": "Branch"
             },
-            "designerId": "4bd123a9-69a6-4d35-91c1-be50336b2f36"
+            "designerId": "685388bf-efd3-41de-9cf8-dc2d5b473818"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "zone",
+                "text": "Zone"
+            },
+            "designerId": "eeb03f92-de0c-48b2-9800-a3da8e1c51ff"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "province",
+                "text": "Province"
+            },
+            "designerId": "2d24992a-8e48-4c5d-b6da-be43e019b8e4"
         },
         {
             "type": "Ext.grid.column.Column",
@@ -100,7 +126,7 @@
                 "dataIndex": "type",
                 "text": "Type"
             },
-            "designerId": "a48318cb-7697-4065-a91f-b4f0c86be6c2"
+            "designerId": "79a0c852-673a-4bb1-b864-e6f7b566f90b"
         },
         {
             "type": "Ext.grid.column.Column",
@@ -113,7 +139,7 @@
                 "dataIndex": "date_start",
                 "text": "Date_start"
             },
-            "designerId": "9e1a5f61-7c4f-49da-a0f8-15fb2abbc91f"
+            "designerId": "adc0d42a-40f1-41f9-9c53-3b61cdf6c3dc"
         },
         {
             "type": "Ext.grid.column.Column",
@@ -126,7 +152,7 @@
                 "dataIndex": "share_first",
                 "text": "Share_first"
             },
-            "designerId": "4a7b08dd-9ae9-46b4-b972-8a44b3c5650a"
+            "designerId": "75163520-fff2-47ff-8265-912f9024cf99"
         }
     ]
 }
